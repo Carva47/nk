@@ -2,8 +2,8 @@
 
 if (isset($_GET['p'])) {
     switch ($_GET['p']) {
-        case 'home':
-            include 'view/home.html';
+        case 'index':
+            include 'view/index.html';
             break;
         case 'servicos':
             include 'view/servicos.html';
@@ -22,10 +22,10 @@ if (isset($_GET['p'])) {
              break;
 
         default:
-        include 'view/home.html';
+        include 'view/index.html';
             break;
     }
 }else {
-    include 'view/home.html';
+    include 'view/index.html';
 }
 
